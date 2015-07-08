@@ -1,0 +1,17 @@
+{
+  "name": "GithubWebhook",
+  "version": "1.0.0",
+  "description": "Receives github events and saves it in Firebase",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Diego Boedo",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.12.3",
+    "express": "^4.12.3",
+    "firebase": "^2.2.7",
+    "firebase-token-generator": "^2.0.0"
+  }
+}
