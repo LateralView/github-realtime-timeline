@@ -282,7 +282,8 @@ header h1 {
 .cd-timeline-content .cd-read-more, .cd-timeline-content .cd-date {
   display: inline-block;
 }
-.cd-timeline-content p {
+.cd-timeline-content p.extra,
+.cd-timeline-content h2 p {
   margin: 1em 0;
   line-height: 1.6;
 }

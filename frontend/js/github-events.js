@@ -29,7 +29,7 @@ $(function() {
     // Timeline content
     var timelineContent = $("<div class='cd-timeline-content'>");
     timelineContent.append($("<h2>").html(markdown.toHTML(githubEvent.message)));
-    if (githubEvent.extra) timelineContent.append($("<p>").html(markdown.toHTML(githubEvent.extra)));
+    if (githubEvent.extra) timelineContent.append($("<p class='extra'>").html(markdown.toHTML(githubEvent.extra)));
     var date = new Date(githubEvent.date).format('M j, H:i');
     timelineContent.append("<span class='cd-date'>" + date + "</span>");
 
