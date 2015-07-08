@@ -17,13 +17,13 @@ Show GitHub events in realtime using Firebase. Supported events:
 ### Architecture
 The app works with a Node.js + Express backend which receives, process and saves in Firebase the GitHub events. The frontend is a HTML + JS app that shows in realtime the events added to Firebase.
 
-![Architecture](http://i.imgur.com/llrUspy.png)
+![Architecture](http://i.imgur.com/oKWHmbv.png)
 
 
 ### Configuration
 **Server side**
 
-Set the Firebase root URL and the Firebase secret (used in the token authentication) in the **server/config.json** file. Deploy the backend (for example to Heroku) and configure a GitHub Webhook pointing to it.
+Set the Firebase root URL and the Firebase secret (used in the token authentication) in the **server/config.json** file. Deploy the backend (for example to Heroku) and configure a GitHub Webhook pointing to BACKEND_URL/github-event.
 
 **Frontend side**
 
