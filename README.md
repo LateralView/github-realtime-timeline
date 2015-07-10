@@ -15,7 +15,7 @@ Show GitHub events in realtime using Firebase. Supported events:
 
 
 ### Architecture
-The app works with a Node.js + Express backend which receives, process and saves in Firebase the GitHub events. The frontend is a HTML + JS app that shows in realtime the events added to Firebase.
+The app works with a Node.js + Express backend which receives, processes and saves in Firebase the GitHub events. The frontend is a HTML + JS app that shows in realtime the events added to Firebase.
 
 ![Architecture](http://i.imgur.com/oKWHmbv.png)
 
