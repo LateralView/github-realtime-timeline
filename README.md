@@ -34,5 +34,26 @@ Set the same Firebase root URL in the **frontend/js/github-events.js** file.
 var rootRef = new Firebase("");
 ```
 
+**Security rules**
+
+Don't forget to add the security rules to your Firebase app. For example, if your Firebase root URL is https://github-timeline.firebaseio.com/events, a basic configuration could be this:
+
+```javascript
+{
+  "rules": {
+    "events": {
+        ".read": true,
+        ".write": "auth != null",
+
+        // No other children are allowed
+        "$other": {
+          ".read": true,
+          ".write": "auth != null"
+        }
+    }
+  }
+}
+
+```
 
 Please feel free to contribute!
